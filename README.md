@@ -39,6 +39,8 @@ The project aims to build a monocular vision using Raspberry Pi as a processing 
  6.This information is processed by the Pi. If the distance between the car and the obstacle is less than 30cm, the car stops.<br/>
  7.Wheels on the left move opposite to the wheels on the right. This helps the car to turn.<br/>
  
+ ![Obstacle](https://www.papeeria.com/f/raw/obstacle.png?project_id=a926426ea9aa2141d68919410f7488e9&file_id=5b63a4ca263406746ea1a092484acb3b)
+ 
  
  
  
