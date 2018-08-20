@@ -35,7 +35,7 @@ The project aims to build a monocular vision using Raspberry Pi as a processing 
  3.The signals return back after hitting a surface and the receiver detects this signal.<br/>
  4.The Echo pin is high from the time of sending the signal and receiving it.<br/>
  5.This time can be converted to distance using appropriate calculations.The speed of sound is 340 m/s or 29 microseconds per centimeter<br/>
-   Distance(cm) = (Time/29)/2<br/>
+   &nbsp;&nbsp;Distance(cm) = (Time/29)/2<br/>
  6.This information is processed by the Pi. If the distance between the car and the obstacle is less than 30cm, the car stops.<br/>
  7.Wheels on the left move opposite to the wheels on the right. This helps the car to turn.<br/>
  
@@ -51,11 +51,11 @@ The project aims to build a monocular vision using Raspberry Pi as a processing 
  5.Transform the curved lines using Hough transform.<br/>
  6.Find the slope of lanes obtained from Hough transform.<br/>
  7.If (slope>= -80 and slope <= -30):<br/>
-      r+=1 (increment right lane counter)<br/>
-      l=0 (reset left lane counter)<br/>
+      &nbsp;&nbsp;r+=1 (increment right lane counter)<br/>
+      &nbsp;&nbsp;l=0 (reset left lane counter)<br/>
    If(slope>= 30 and slope <= 80):<br/>
-      l+=1 (increment left lane counter)<br/>
-      r=0 (reset right lane counter)<br/>
+      &nbsp;&nbsp;l+=1 (increment left lane counter)<br/>
+      &nbsp;&nbsp;r=0 (reset right lane counter)<br/>
 8.If l > 10:<br/>
     Turn left<br/>
   elif r > 10:<br/>
