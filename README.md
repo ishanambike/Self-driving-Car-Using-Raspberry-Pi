@@ -5,86 +5,86 @@ The project aims to build a monocular vision using Raspberry Pi as a processing 
 
  A miniature car including above features will be developed which will show optimum performance in the simulated environment considering the fact that all assumptions and Dependencies are met.
  
- Hardware Requirements:
- 1 x Raspberry Pi Model 3B 
- 1 x Raspberry Pi 5v Camera 
- 2 x HCSR04 Ultrasonic Sensor 
- 1 x L293D Motor Driver 
- 1 x Robot Chassis Cost 
- 1 x Power Bank Cost 
- 1 x 9v Battery Cost 
- 1 x Set of Jumper wires 
- 1 x 16 GB Micro SD Card 
- 1 x  Bread Board Cost   
+ Hardware Requirements:<br/>
+ 1 x Raspberry Pi Model 3B <br/>
+ 1 x Raspberry Pi 5v Camera <br/>
+ 2 x HCSR04 Ultrasonic Sensor <br/>
+ 1 x L293D Motor Driver <br/>
+ 1 x Robot Chassis Cost <br/>
+ 1 x Power Bank Cost <br/>
+ 1 x 9v Battery Cost <br/>
+ 1 x Set of Jumper wires <br/>
+ 1 x 16 GB Micro SD Card <br/>
+ 1 x  Bread Board Cost   <br/>
  
  
  Software Requirements:
- Raspian Os
- Xming Server
- PuTTY SSH Session
- Remote Desktop Connection
- Opencv 3.0
- Python 2.7
+ Raspian Os <br/>
+ Xming Server <br/>
+ PuTTY SSH Session <br/>
+ Remote Desktop Connection <br/>
+ Opencv 3.0 <br/>
+ Python 2.7 <br/>
  
- Modules presented in this project:
+ Modules presented in this project:<br/>
  
- I] Obstacle Avoidance:
- Working Steps:
- 1.Trig pin on ultrasonic sensor is made logic high using external trigger signal.
- 2.A signal is sent from the transmitter module.
- 3.The signals return back after hitting a surface and the receiver detects this signal.
- 4.The Echo pin is high from the time of sending the signal and receiving it.
- 5.This time can be converted to distance using appropriate calculations.The speed of sound is 340 m/s or 29 microseconds per centimeter
-   Distance(cm) = (Time/29)/2
- 6.This information is processed by the Pi. If the distance between the car and the obstacle is less than 30cm, the car stops.
- 7.Wheels on the left move opposite to the wheels on the right. This helps the car to turn.
- 
- 
+ I] Obstacle Avoidance:<br/>
+ Working Steps:<br/>
+ 1.Trig pin on ultrasonic sensor is made logic high using external trigger signal.<br/>
+ 2.A signal is sent from the transmitter module.<br/>
+ 3.The signals return back after hitting a surface and the receiver detects this signal.<br/>
+ 4.The Echo pin is high from the time of sending the signal and receiving it.<br/>
+ 5.This time can be converted to distance using appropriate calculations.The speed of sound is 340 m/s or 29 microseconds per centimeter<br/>
+   Distance(cm) = (Time/29)/2<br/>
+ 6.This information is processed by the Pi. If the distance between the car and the obstacle is less than 30cm, the car stops.<br/>
+ 7.Wheels on the left move opposite to the wheels on the right. This helps the car to turn.<br/>
  
  
- II] Lane Tracking:
- Working Steps:
- 1.Extract the color range for the road.
- 2.Convert the image into grayscale image.
- 3.Identify the lane in white/yellow color using Canny edge algorithm.
- 4.Define the region of interest by using image mask.
- 5.Transform the curved lines using Hough transform.
- 6.Find the slope of lanes obtained from Hough transform.
- 7.If (slope>= -80 and slope <= -30):
-      r+=1 (increment right lane counter)
-      l=0 (reset left lane counter)
-   If(slope>= 30 and slope <= 80):
-      l+=1 (increment left lane counter)
-      r=0 (reset right lane counter)
-8.If l > 10:
-    Turn left
-  elif r > 10:
-    Turn right
-  else:
-    Move straight 
-9.Repeat from step 1
+ 
+ 
+ II] Lane Tracking:<br/>
+ Working Steps:<br/>
+ 1.Extract the color range for the road.<br/>
+ 2.Convert the image into grayscale image.<br/>
+ 3.Identify the lane in white/yellow color using Canny edge algorithm.<br/>
+ 4.Define the region of interest by using image mask.<br/>
+ 5.Transform the curved lines using Hough transform.<br/>
+ 6.Find the slope of lanes obtained from Hough transform.<br/>
+ 7.If (slope>= -80 and slope <= -30):<br/>
+      r+=1 (increment right lane counter)<br/>
+      l=0 (reset left lane counter)<br/>
+   If(slope>= 30 and slope <= 80):<br/>
+      l+=1 (increment left lane counter)<br/>
+      r=0 (reset right lane counter)<br/>
+8.If l > 10:<br/>
+    Turn left<br/>
+  elif r > 10:<br/>
+    Turn right<br/>
+  else:<br/>
+    Move straight <br/>
+9.Repeat from step 1<br/>
 
-III] Traffic light detection:
-Working Steps:
-1.Capture Frames from the pi camera.
-2.Define the specific region in each frame which will be considered for computation.
-3.In defined region using color & shape detection identify Red & Green traffic signal.
-4.If Red signal detected stop the car.
-5.If Green signal detected move the car.
+III] Traffic light detection:<br/>
+Working Steps:<br/>
+1.Capture Frames from the pi camera.<br/>
+2.Define the specific region in each frame which will be considered for computation.<br/>
+3.In defined region using color & shape detection identify Red & Green traffic signal.<br/>
+4.If Red signal detected stop the car.<br/>
+5.If Green signal detected move the car.<br/>
 
-IV] Automated Parking:
-Working Steps:
-1.Trig pin on ultrasonic sensor is made logic high using external trigger signal.
-2.A signal is sent from the transmitter module.
-3.The signals return back after hitting a surface and the receiver detects this signal.
-4.Echo pin is high from the time of sending the signal and receiving it.
-5.This time can be converted to distance using appropriate calculations.
-      The speed of sound is 340 m/s or 29 microseconds per centimeter
-      Distance(cm) = (Time/29)/2
-6.The car will keep checking for empty slots by detecting empty spaces with distance>30 cm.
-7.Once it detects free space it keeps checking whether distance in >30 cm for about 1 sec while moving forward.
-8.If it gets distance >30cm for 1 sec then it has found space to park and car will stop.
-9.Then it will park in that spot.
+IV] Automated Parking:<br/>
+Working Steps:<br/>
+1.Trig pin on ultrasonic sensor is made logic high using external trigger signal.<br/>
+2.A signal is sent from the transmitter module.<br/>
+3.The signals return back after hitting a surface and the receiver detects this signal.<br/>
+4.Echo pin is high from the time of sending the signal and receiving it.<br/>
+5.This time can be converted to distance using appropriate calculations.<br/>
+      The speed of sound is 340 m/s or 29 microseconds per centimeter<br/>
+      Distance(cm) = (Time/29)/2<br/>
+6.The car will keep checking for empty slots by detecting empty spaces with distance>30 cm.<br/>
+7.Once it detects free space it keeps checking whether distance in >30 cm for about 1 sec while moving forward.<br/>
+8.If it gets distance >30cm for 1 sec then it has found space to park and car will stop.<br/>
+9.Then it will park in that spot.<br/>
 
 
 
