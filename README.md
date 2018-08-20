@@ -51,17 +51,17 @@ The project aims to build a monocular vision using Raspberry Pi as a processing 
  5.Transform the curved lines using Hough transform.<br/>
  6.Find the slope of lanes obtained from Hough transform.<br/>
  7.If (slope>= -80 and slope <= -30):<br/>
-      &nbsp;&nbsp;r+=1 (increment right lane counter)<br/>
-      &nbsp;&nbsp;l=0 (reset left lane counter)<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;r+=1 (increment right lane counter)<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;l=0 (reset left lane counter)<br/>
    If(slope>= 30 and slope <= 80):<br/>
-      &nbsp;&nbsp;l+=1 (increment left lane counter)<br/>
-      &nbsp;&nbsp;r=0 (reset right lane counter)<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;l+=1 (increment left lane counter)<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;r=0 (reset right lane counter)<br/>
 8.If l > 10:<br/>
-    Turn left<br/>
+   &nbsp;&nbsp;&nbsp;&nbsp; Turn left<br/>
   elif r > 10:<br/>
-    Turn right<br/>
+   &nbsp;&nbsp;&nbsp;&nbsp; Turn right<br/>
   else:<br/>
-    Move straight <br/>
+   &nbsp;&nbsp;&nbsp;&nbsp; Move straight <br/>
 9.Repeat from step 1<br/>
 
 III] Traffic light detection:<br/>
@@ -80,7 +80,7 @@ Working Steps:<br/>
 4.Echo pin is high from the time of sending the signal and receiving it.<br/>
 5.This time can be converted to distance using appropriate calculations.<br/>
       The speed of sound is 340 m/s or 29 microseconds per centimeter<br/>
-      Distance(cm) = (Time/29)/2<br/>
+      &nbsp;&nbsp;Distance(cm) = (Time/29)/2<br/>
 6.The car will keep checking for empty slots by detecting empty spaces with distance>30 cm.<br/>
 7.Once it detects free space it keeps checking whether distance in >30 cm for about 1 sec while moving forward.<br/>
 8.If it gets distance >30cm for 1 sec then it has found space to park and car will stop.<br/>
