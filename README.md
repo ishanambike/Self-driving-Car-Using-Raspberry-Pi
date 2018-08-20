@@ -40,7 +40,7 @@ The project aims to build a monocular vision using Raspberry Pi as a processing 
  7.Wheels on the left move opposite to the wheels on the right. This helps the car to turn.<br/>
  
  ![Obstacle](https://www.papeeria.com/f/raw/obstacle.png?project_id=a926426ea9aa2141d68919410f7488e9&file_id=5b63a4ca263406746ea1a092484acb3b) <br/>
- ![No Obstacle](https://www.papeeria.com/f/raw/No%20obstacle.png?project_id=a926426ea9aa2141d68919410f7488e9&file_id=fab2f34bfde89d2402e1725700c21bea)<br/>
+ ![No Obstacle](https://github.com/ishanambike/Self-driving-Car-Using-Raspberry-Pi/blob/master/Proj_images/No_obs.png)<br/>
  ![Terminal output](https://www.papeeria.com/f/raw/obst_ter.png?project_id=a926426ea9aa2141d68919410f7488e9&file_id=ef35b00e37691c1a362acf43c003fbb2)<br/>
  
  
