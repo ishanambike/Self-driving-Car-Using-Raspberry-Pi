@@ -39,9 +39,9 @@ The project aims to build a monocular vision using Raspberry Pi as a processing 
  6.This information is processed by the Pi. If the distance between the car and the obstacle is less than 30cm, the car stops.<br/>
  7.Wheels on the left move opposite to the wheels on the right. This helps the car to turn.<br/>
  
- ![Obstacle](https://www.papeeria.com/f/raw/obstacle.png?project_id=a926426ea9aa2141d68919410f7488e9&file_id=5b63a4ca263406746ea1a092484acb3b) <br/>
+ ![Obstacle](https://github.com/ishanambike/Self-driving-Car-Using-Raspberry-Pi/blob/master/Proj_images/obstacle.png) <br/>
  ![No Obstacle](https://github.com/ishanambike/Self-driving-Car-Using-Raspberry-Pi/blob/master/Proj_images/No_obs.png)<br/>
- ![Terminal output](https://www.papeeria.com/f/raw/obst_ter.png?project_id=a926426ea9aa2141d68919410f7488e9&file_id=ef35b00e37691c1a362acf43c003fbb2)<br/>
+ ![Terminal output](https://github.com/ishanambike/Self-driving-Car-Using-Raspberry-Pi/blob/master/Proj_images/obst_ter.png)<br/>
  
  
  
@@ -67,9 +67,9 @@ The project aims to build a monocular vision using Raspberry Pi as a processing 
   else:<br/>
    &nbsp;&nbsp;&nbsp;&nbsp; Move straight <br/>
 9.Repeat from step 1<br/>
-![Left Turn Detection](https://www.papeeria.com/f/raw/left.png?project_id=a926426ea9aa2141d68919410f7488e9&file_id=844082b49a568ff6299de8a8c1d4184b)<br/>
-![Rigth Turn Detection](https://www.papeeria.com/f/raw/right.png?project_id=a926426ea9aa2141d68919410f7488e9&file_id=0830918814f385ccb750b92aacf3d18d)<br/>
-![Go Straight](https://www.papeeria.com/f/raw/straight.png?project_id=a926426ea9aa2141d68919410f7488e9&file_id=7e089dd46b5bcacfe924e91d0ed16e43)<br/>
+![Left Turn Detection](https://github.com/ishanambike/Self-driving-Car-Using-Raspberry-Pi/blob/master/Proj_images/left.png)<br/>
+![Rigth Turn Detection](https://github.com/ishanambike/Self-driving-Car-Using-Raspberry-Pi/blob/master/Proj_images/right.png)<br/>
+![Go Straight](https://github.com/ishanambike/Self-driving-Car-Using-Raspberry-Pi/blob/master/Proj_images/straight.png)<br/>
 
 
 III] Traffic light detection:<br/>
@@ -79,8 +79,8 @@ Working Steps:<br/>
 3.In defined region using color & shape detection identify Red & Green traffic signal.<br/>
 4.If Red signal detected stop the car.<br/>
 5.If Green signal detected move the car.<br/>
-![Red Signal](https://www.papeeria.com/f/raw/red_light.png?project_id=a926426ea9aa2141d68919410f7488e9&file_id=96303e6e913e5dfc79c716817b8371ec)<br/>
-![Green Signal](https://www.papeeria.com/f/raw/green_light.png?project_id=a926426ea9aa2141d68919410f7488e9&file_id=09ae07def3a709fdb8655f20f738bf15)<br/>
+![Red Signal](https://github.com/ishanambike/Self-driving-Car-Using-Raspberry-Pi/blob/master/Proj_images/red_light.png)<br/>
+![Green Signal](https://github.com/ishanambike/Self-driving-Car-Using-Raspberry-Pi/blob/master/Proj_images/green_light.png)<br/>
 
 
 
@@ -98,9 +98,9 @@ Working Steps:<br/>
 8.If it gets distance >30cm for 1 sec then it has found space to park and car will stop.<br/>
 9.Then it will park in that spot.<br/>
 
-![Searching For Free Spot](https://www.papeeria.com/f/raw/parking1.png?project_id=a926426ea9aa2141d68919410f7488e9&file_id=a4061905d1f9dcaf5f8366a47ec32823)<br/>
-![Found Free Space](https://www.papeeria.com/f/raw/park2.png?project_id=a926426ea9aa2141d68919410f7488e9&file_id=0cab6408434e5f332ea6a3ac88cc7a70)<br/>
-![Parked](https://www.papeeria.com/f/raw/park3.png?project_id=a926426ea9aa2141d68919410f7488e9&file_id=709baca78feed22c46d9fc7c7e07b707)<br/>
+![Searching For Free Spot](https://github.com/ishanambike/Self-driving-Car-Using-Raspberry-Pi/blob/master/Proj_images/parking1.png?raw=true)<br/>
+![Found Free Space](https://github.com/ishanambike/Self-driving-Car-Using-Raspberry-Pi/blob/master/Proj_images/park2.png?raw=true)<br/>
+![Parked](https://github.com/ishanambike/Self-driving-Car-Using-Raspberry-Pi/blob/master/Proj_images/park3.png?raw=true)<br/>
 
 
 
