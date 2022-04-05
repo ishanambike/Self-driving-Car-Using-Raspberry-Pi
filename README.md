@@ -10,12 +10,12 @@ The project aims to build a monocular vision using Raspberry Pi as a processing 
  1 x Raspberry Pi 5v Camera <br/>
  2 x HCSR04 Ultrasonic Sensor <br/>
  1 x L293D Motor Driver <br/>
- 1 x Robot Chassis Cost <br/>
- 1 x Power Bank Cost <br/>
- 1 x 9v Battery Cost <br/>
+ 1 x Robot Chassis<br/>
+ 1 x Power Bank<br/>
+ 1 x 9v Battery<br/>
  1 x Set of Jumper wires <br/>
  1 x 16 GB Micro SD Card <br/>
- 1 x  Bread Board Cost   <br/>
+ 1 x  Bread Board<br/>
  
  
  Software Requirements:
