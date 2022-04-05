@@ -1,7 +1,7 @@
 # Self-driving-Car-Using-Raspberry-Pi
 This project develops a prototype of self driving car which basically demonstrates lane tracking, automated parking,obstacle detection and traffic lights detection.
 
-The project aims to build a monocular vision using Raspberry Pi as a processing chip. A Pi camera along with an ultrasonic sensor is used to provide necessary data from the real world to the module. The proposed module helps the driver in reaching the given destination safely and intelligently thus avoiding the risk of human errors. Many existing algorithms like  Obstacle detection, Traffic signal detection, Automatic parking and Lane tracking are combined together to provide the necessary control to the car.Obstacle detection and Automatic parking  is carried out by Ultrasoic sensors. Lane Tracking and Traffic signal detection is done with help of Pi camera along with OpenCV. 
+The project aims to build a monocular vision using Raspberry Pi as a processing chip. A Pi camera along with an ultrasonic sensor is used to provide necessary data from the real world to the module. The proposed module helps the driver in reaching the given destination safely and intelligently thus avoiding the risk of human errors. Many existing algorithms like  Obstacle detection, Traffic signal detection, Automatic parking and Lane tracking are combined together to provide the necessary control to the car. Obstacle detection and Automatic parking  is carried out by Ultrasoic sensors. Lane Tracking and Traffic signal detection is done with help of Pi camera along with OpenCV. 
 
  A miniature car including above features will be developed which will show optimum performance in the simulated environment considering the fact that all assumptions and Dependencies are met.
  
